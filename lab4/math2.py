@@ -1,0 +1,5 @@
+h=int(input("Height: "))
+a=int(input("Base, first value: "))
+b=int(input("Base, second value: "))
+answer=(h/2)*(a+b)
+print("Expected Output: ",answer)
