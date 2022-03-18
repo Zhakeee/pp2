@@ -6,7 +6,7 @@ cnt=0
 while(True):
     a=int(input("Take a guess.\n"))
     if answer == a:
-        print(f"Good job, KBTU! You guessed my number in {cnt} guesses!")
+        print(f"Good job, " +s+ "! You guessed my number in "+str(cnt)+ " guesses!")
         break
     elif answer>a:
         cnt=cnt+1
