@@ -1,11 +1,6 @@
-import re
-def text(a):
-    b = 'ab{2,3}'
-    x = re.search(b, a)
-    if x:
-        return True
-    else:
-        return False
-
-a = input()
-print(text(a))  
+import os
+a ='C:\dir'
+isFile=os.path.isfile(a)
+isDir=os.path.isdir(a)
+print(isFile)
+print(isDir)

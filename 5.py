@@ -1,9 +1,7 @@
-import re
-def text(a):
-    b = '^a.*b$'
-    if re.search(b,  a):
-            return True
-    else:
-            return False
-a = input()
-print(text(a))
+text=["programming", " principles", " II"]
+f=open("file.txt", "w")
+for i in text:
+    f.write(i)
+f.close()
+f=open("file.txt", "r")
+print(f.read())
