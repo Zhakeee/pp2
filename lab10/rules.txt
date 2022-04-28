@@ -1,0 +1,13 @@
+\l - list all databases
+\c database_name - connect to database
+\dt - list of all tables
+\q - quit
+DROP TABLE table_name;
+DROP DATABASE database_name;
+DELETE FROM table_name WHERE condition;
+CREATE TABLE table_name (col1 class, col2 class);
+CREATE DATABASE IF NOT EXISTS database_name;
+INSERT INTO table_name (col1, col2) values ('...', '...' );
+UPDATE table_name SET col1 = '...', col2 = '...' WHERE condition;
+INSERT INTO table_name (col1, col2) VALUES(%s, %s) ON CONFLICT (col1) DO UPDATE SET col2 = EXCLUDED.col2
+INSERT IGNORE INTO table_name (col1, col2) VALUES(%s, %s)
